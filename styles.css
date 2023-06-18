@@ -114,7 +114,7 @@ form label {
   margin-bottom: 5px;
 }
 
-form input {
+form input, select {
   margin-bottom: 10px;
   padding: 5px;
   border: 1px solid #ccc;

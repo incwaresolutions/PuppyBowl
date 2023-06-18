@@ -123,6 +123,8 @@ const renderAllPlayers = (playerList) => {
 /**
  * It renders a form to the DOM, and when the form is submitted, it adds a new player to the database,
  * fetches all players from the database, and renders them to the DOM.
+ * 
+ * <input type="text" id="status" name="status" required>
  */
 const renderNewPlayerForm = () => {
     try {
@@ -134,7 +136,10 @@ const renderNewPlayerForm = () => {
                 <label for="breed">Breed:</label>
                 <input type="text" id="breed" name="breed" required>
                 <label for="status">Status:</label>
-                <input type="text" id="status" name="status" required>
+                <select name="status" id="status">
+                    <option value="field">Field</option>
+                    <option value="bench" selected>Bench</option>
+                <select>
                 <label for="imageUrl">Image URL:</label>
                 <input type="text" id="imageUrl" name="imageUrl" required>
                 <button type="submit">Add Player</button>
